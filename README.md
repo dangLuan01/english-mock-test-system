@@ -6,6 +6,26 @@ This project focuses on clean architecture, scalability, and maintainability —
 
 ---
 
+## Live Repository Links
+
+### Main Project Overview
+
+🔗 https://github.com/dangLuan01/english-mock-test-system
+
+### Backend API (Go + Gin)
+
+🔗 https://github.com/dangLuan01/ets-api
+
+### Frontend Client (User)
+
+🔗 https://github.com/dangLuan01/ets-client
+
+### Admin Dashboard
+
+🔗 https://github.com/dangLuan01/ets-admin
+
+---
+
 ## Project Goal
 
 To design and implement a scalable backend system that:
@@ -45,6 +65,8 @@ MySQL
 
 ## Tech Stack
 
+Backend:
+
 * **Go**
 * **Gin** (HTTP framework)
 * MySQL
@@ -53,6 +75,11 @@ MySQL
 * Structured logging
 * Environment configuration (.env)
 
+Frontend (for integration):
+
+* Next.js
+* React
+* TailwindCSS
 ---
 
 ## Core Backend Features
