@@ -47,7 +47,7 @@ MySQL
 
 * **Go**
 * **Gin** (HTTP framework)
-* PostgreSQL
+* MySQL
 * JWT Authentication
 * RESTful API design
 * Structured logging
