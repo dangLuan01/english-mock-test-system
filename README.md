@@ -30,7 +30,7 @@ This project focuses on clean architecture, scalability, and maintainability —
 
 To design and implement a scalable backend system that:
 
-* Multiple certificate exam test
+* Supports multiple English certificate mock exams
 * Handles mock test execution
 * Calculates scores automatically
 * Manages question banks
@@ -124,18 +124,6 @@ GET    /api/v1/tests
 POST   /api/v1/tests/submit
 GET    /api/v1/admin/questions
 ```
-
----
-
-## Backend Engineering Highlights
-
-* Clean layered structure (handler → service → repository)
-* Reusable middleware
-* Centralized error handler
-* Production mode configuration
-* Proper HTTP status code usage
-* Context-based request handling
-* Transaction handling for critical operations
 
 ---
 
