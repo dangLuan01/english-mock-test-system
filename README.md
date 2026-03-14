@@ -30,6 +30,7 @@ This project focuses on clean architecture, scalability, and maintainability —
 
 To design and implement a scalable backend system that:
 
+* Multiple certificate exam test
 * Handles mock test execution
 * Calculates scores automatically
 * Manages question banks
