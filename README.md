@@ -1,176 +1,164 @@
-# English Mock Test – Backend Service (Go)
+# 🎓 TOEIC/IELTS Online Testing & Learning Platform
 
-A production-oriented RESTful backend service built with Go, designed to power a full English mock testing platform.
-
-This project focuses on clean architecture, scalability, and maintainability — following backend engineering best practices.
+🇻🇳 Vietnamese version: [README.vi.md](./README.vi.md)
 
 ---
 
-## Live Repository Links
+A comprehensive **EdTech platform** designed to simulate standardized international exams such as **TOEIC** and **IELTS**.
 
-### Main Project Overview
+The system focuses on:
 
-🔗 https://github.com/dangLuan01/english-mock-test-system
+- Minimal and modern Asian-inspired UI
+- High performance & scalability
+- Seamless user experience
+- 24/7 reliability
 
-### Backend API (Go + Gin)
-
-🔗 https://github.com/dangLuan01/ets-api
-
-### Frontend Client (User)
-
-🔗 https://github.com/dangLuan01/ets-client
-
-### Admin Dashboard
-
-🔗 https://github.com/dangLuan01/ets-admin
+The architecture follows a **Micro-repositories** approach to separate business domains for better maintainability and future scalability.
 
 ---
 
-## Project Goal
+# 🏗 System Architecture (Repositories)
 
-To design and implement a scalable backend system that:
+This repository serves as the central overview of the ecosystem.
 
-* Supports multiple English certificate mock exams
-* Handles mock test execution
-* Calculates scores automatically
-* Manages question banks
-* Supports role-based authentication
-* Serves both client and admin applications
+The platform is separated into 3 independent repositories:
 
----
-
-## Architecture Overview
-
-The backend follows a layered architecture:
-
-```
-HTTP Layer (Handler)
-        ↓
-Service Layer (Business Logic)
-        ↓
-Repository Layer (Data Access)
-        ↓
-MySQL
-```
-
-### Architectural Principles
-
-* Clear separation of concerns
-* Dependency injection
-* Interface-driven design
-* Stateless authentication (JWT)
-* Middleware-based request pipeline
-* Environment-based configuration
+| Module | Description | Repository |
+|---|---|---|
+| API Server | RESTful backend API, scoring engine, exam session management, synchronization | `[API_Repo_Link]` |
+| Client App | Student-facing frontend application for testing, practicing, and analytics | `[Client_Repo_Link]` |
+| Admin Portal | CMS dashboard for managing exams, questions, and users | `[Admin_Repo_Link]` |
 
 ---
 
-## Tech Stack
+# 🚀 Core Features
 
-Backend:
+## Flexible Exam Engine
 
-* **Go**
-* **Gin** (HTTP framework)
-* MySQL
-* JWT Authentication
-* RESTful API design
-* Structured logging
-* Environment configuration (.env)
+Supports multiple learning modes within a unified and adaptive interface.
 
-Frontend (for integration):
+### Exam Mode
 
-* Next.js
-* React
-* TailwindCSS
----
+Realistic exam simulation environment:
 
-## Core Backend Features
+- 100–200 question full tests
+- Standardized scoring flow
+- Distraction-free experience
 
-### Authentication & Authorization
+### Practice Mode
 
-* JWT-based authentication
-* Access token validation middleware
-* Role-based access control (User / Admin)
-* Secure route grouping
+Micro-learning focused experience:
 
-### Exam Engine
+- Instant answer feedback
+- Explanations and solutions
+- Part-based practice
 
-* Timed mock test session handling
-* Auto score calculation logic
-* Persistent result storage
-* Efficient question retrieval
+### Review Mode
 
-### Admin System
+Detailed exam review system:
 
-* CRUD operations for question bank
-* Test set creation and management
-* User management
-* Protected admin endpoints
+- Review answer history
+- Analyze strengths & weaknesses
+- Track learning progress
 
 ---
 
-## API Design
+## Seamless Cross-Device Experience
 
-* RESTful route structure
-* Versioned API (if applicable)
-* Standardized JSON response format
-* Centralized error handling
-* Input validation & binding
+Real-time synchronization across devices:
 
-Example:
-
-```
-POST   /api/v1/auth/login
-GET    /api/v1/tests
-POST   /api/v1/tests/submit
-GET    /api/v1/admin/questions
-```
+- Start on mobile
+- Continue on desktop
+- No interrupted sessions
 
 ---
 
-## Database Design
+## Resilient Auto-Save
 
-* Relational schema design
-* Normalized tables
-* Foreign key constraints
-* Indexed columns for optimized queries
-* Separation between test sessions and question bank
+Intelligent auto-save mechanism:
 
----
-
-## Scalability Considerations
-
-* Stateless API (horizontal scaling ready)
-* JWT-based authentication (no server session storage)
-* Modular service structure
-* Easily extendable to microservices
-* Ready for containerization (Docker-ready structure)
+- Zero-Data Loss architecture
+- Handles:
+  - Network failures
+  - Browser crashes
+  - Unexpected shutdowns
 
 ---
 
-## Potential Improvements
+## Smart Revision
 
-* Redis caching layer
-* Background job processing (e.g., result analytics)
-* Rate limiting middleware
-* CI/CD integration
-* Load testing & performance benchmarking
-* OpenAPI documentation
+Integrated bookmark & revision system:
 
----
-
-## What This Project Demonstrates
-
-* Ability to design REST APIs in Go
-* Clean architecture understanding
-* Production mindset in backend development
-* Authentication & authorization implementation
-* Scalable system thinking
+- Save important questions
+- Personalized review workflow
+- Foundation for spaced repetition algorithms
 
 ---
 
-## Author
+# 🛠 Architecture Highlights
 
-Luan
-Backend-focused Go Developer
+## Data-Driven UI
 
-Interested in Backend / Platform Engineering roles.
+Frontend architecture driven entirely by structured data.
+
+Components dynamically adapt to:
+
+- Full Exams
+- Mini Tests
+- Practice Parts
+
+Benefits:
+
+- Highly reusable components
+- Minimal hard-coded layouts
+- Easier feature expansion
+
+---
+
+## Optimized Database Writes
+
+Backend optimized for massive concurrent answer submissions.
+
+Techniques:
+
+- Batching & Queueing
+- Bulk Upsert operations
+- Reduced database pressure
+- Higher throughput performance
+
+---
+
+## Stateless & Scalable Backend
+
+Backend services are designed to be stateless:
+
+- Easy horizontal scaling
+- Multi-instance deployment ready
+- High traffic resilience
+
+---
+
+# 💻 Tech Stack
+
+## Backend
+
+- Go (Golang)
+- Gin Framework
+
+## Frontend
+
+- React
+- Next.js
+- Zustand
+
+## Database & Caching
+
+- MySQL / PostgreSQL
+- Redis
+
+## DevOps & Deployment
+
+- Docker
+- Nginx
+- GitHub Actions (CI/CD)
+- Linux VPS
