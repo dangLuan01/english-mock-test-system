@@ -25,9 +25,9 @@ The platform is separated into 3 independent repositories:
 
 | Module | Description | Repository |
 |---|---|---|
-| API Server | RESTful backend API, scoring engine, exam session management, synchronization | `[[API_Repo_Link](https://github.com/dangLuan01/ets-api)]` |
-| Client App | Student-facing frontend application for testing, practicing, and analytics | `[[Client_Repo_Link](https://github.com/dangLuan01/ets-client)]` |
-| Admin Portal | CMS dashboard for managing exams, questions, and users | `[[Admin_Repo_Link](https://github.com/dangLuan01/ets-admin)]` |
+| API Server | RESTful backend API, scoring engine, exam session management, synchronization | `[API_Repo_Link](https://github.com/dangLuan01/ets-api)` |
+| Client App | Student-facing frontend application for testing, practicing, and analytics | `[Client_Repo_Link](https://github.com/dangLuan01/ets-client)` |
+| Admin Portal | CMS dashboard for managing exams, questions, and users | `[Admin_Repo_Link](https://github.com/dangLuan01/ets-admin)` |
 
 ---
 
