@@ -25,9 +25,9 @@ Hệ thống được chia thành 3 repositories độc lập:
 
 | Module | Mô tả | Repository |
 |---|---|---|
-| API Server | Backend cung cấp RESTful API, xử lý chấm điểm, quản lý phiên thi và đồng bộ dữ liệu | [Repo Link Api](github.com/dangLuan01/ets-api) |
-| Client App | Frontend dành cho học viên, xử lý giao diện làm bài, luyện tập và thống kê | `https://github.com/dangLuan01/ets-client` |
-| Admin Portal | Trang quản trị nội dung (CMS), quản lý đề thi, câu hỏi và người dùng | `https://github.com/dangLuan01/ets-admin` |
+| API Server | Backend cung cấp RESTful API, xử lý chấm điểm, quản lý phiên thi và đồng bộ dữ liệu | [API_Repo_Link](github.com/dangLuan01/ets-api) |
+| Client App | Frontend dành cho học viên, xử lý giao diện làm bài, luyện tập và thống kê | [Client_Repo_Link](https://github.com/dangLuan01/ets-client) |
+| Admin Portal | Trang quản trị nội dung (CMS), quản lý đề thi, câu hỏi và người dùng | [Admin_Repo_Link](https://github.com/dangLuan01/ets-admin) |
 
 ---
 
